@@ -44,7 +44,7 @@ const PremiumItem = ({image, description}: premiumProps) => {
     <View style={styles.container}>
       <Image style={styles.image} source={image} />
       <LinearGradient
-        colors={['#4D4D4D00', '#0000001E']}
+        colors={['#4D4D4D00', '#000000B2']}
         style={styles.description}>
         <Text style={styles.descriptionText}>{description}</Text>
       </LinearGradient>

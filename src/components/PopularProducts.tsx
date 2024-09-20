@@ -1,5 +1,6 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 interface product {
   image: any;
@@ -60,7 +61,10 @@ const Product = ({image, description, ratting, price, itemsSold}: product) => {
       <View style={styles.descriptBox}>
         <Text style={styles.descripTitle}>{description}</Text>
         <View style={styles.rattingContent}>
-          <Text style={styles.ratting}>{ratting}</Text>
+          <View style={{flexDirection: 'row', gap: 8, alignItems:'center'}}>
+            <Icon name='star' color='orange'/>
+            <Text style={styles.ratting}>{ratting}</Text>
+          </View>
           <Text style={styles.sold}>{itemsSold} items are sold</Text>
         </View>
         <Text style={styles.price}>₵{price}</Text>

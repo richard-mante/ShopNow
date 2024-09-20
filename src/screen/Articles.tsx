@@ -1,11 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import UnderConstruction from '../components/UnderConstruction'
 
 export default function Articles() {
   return (
-    <View>
-      <Text>Articles</Text>
-    </View>
+    <UnderConstruction/>
   )
 }
 

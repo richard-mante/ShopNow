@@ -3,6 +3,7 @@ import React from 'react';
 import LinkTopBar from '../components/LinkTopBar';
 import Colors from '../data/theme';
 import Category from '../components/Category';
+import UnderConstruction from '../components/UnderConstruction';
 
 interface category {
   name: string;
@@ -12,51 +13,7 @@ interface category {
 }
 
 export default function Cart() {
-  const allCategories: category[] = [
-    {
-      name: 'Wardrobe',
-      description: 'Some Common Description of a wardrobe',
-      productsAvailable: 560,
-      image: '../assets/prem1.jpg',
-    },
-    {
-      name: 'Chair',
-      description: 'Some Common Description of a wardrobe',
-      productsAvailable: 560,
-      image: '../assets/prem1.jpg',
-    },
-    {
-      name: 'Sofa',
-      description: 'Some Common Description of a wardrobe',
-      productsAvailable: 560,
-      image: '../assets/prem1.jpg',
-    },
-    {
-      name: 'Study Table',
-      description: 'Some Common Description of a wardrobe',
-      productsAvailable: 560,
-      image: '../assets/prem1.jpg',
-    },
-  ];
-  return (
-    <View
-      style={[styles.body, {backgroundColor: Colors.lightTheme.background}]}>
-      <StatusBar backgroundColor={Colors.lightTheme.background} />
-      <LinkTopBar />
-      <ScrollView>
-        {allCategories.map((item, index) => {
-          return (
-            <Category
-              name={item.name}
-              description={item.description}
-              productsAvailable={item.productsAvailable}
-              image={item.image}
-            />
-          );
-        })}
-      </ScrollView>
-    </View>
-  );
+ return <UnderConstruction />;
 }
 
 const styles = StyleSheet.create({
