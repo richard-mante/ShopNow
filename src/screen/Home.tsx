@@ -6,7 +6,7 @@ import SearchBox from '../components/SearchBox';
 import Premium from '../components/Premium';
 import PopularProducts from '../components/PopularProducts';
 
-export default function App() {
+export default function Home() {
   return (
     <View
       style={[styles.body, {backgroundColor: Colors.lightTheme.background}]}>

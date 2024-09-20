@@ -1,14 +1,15 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome6';
 
 export default function LinkTopBar() {
   return (
     <View style={[styles.topbar]}>
-      <View style={styles.button}></View>
-      <Text>Categories</Text>
+      <Icon name="chevron-left" size={20} color="#4B4B4BFF" />
+      <Text style={{fontSize: 16}}>Categories</Text>
       <View style={styles.buttons}>
-        <View style={styles.button}></View>
-        <View style={styles.button}></View>
+        <Icon name="magnifying-glass" size={18} color="#7A7474" />
+        <Icon name="heart" size={18} color="#7A7474" />
       </View>
     </View>
   );
@@ -23,16 +24,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     gap: 12,
   },
-  button: {
-    width: 30,
-    height: 30,
-    borderRadius: 4,
-    backgroundColor: '#FFFFFFFF',
-  },
+
   buttons: {
     flexDirection: 'row',
-    gap: 16,
+    gap: 32,
     marginLeft: 'auto',
+    alignItems: 'center',
+    paddingRight: 16,
   },
   profileImage: {
     width: 30,

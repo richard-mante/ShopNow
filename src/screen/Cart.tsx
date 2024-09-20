@@ -10,7 +10,8 @@ interface category {
   productsAvailable: number;
   image: string;
 }
-export default function Categories() {
+
+export default function Cart() {
   const allCategories: category[] = [
     {
       name: 'Wardrobe',

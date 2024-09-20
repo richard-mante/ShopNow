@@ -5,7 +5,7 @@ interface category {
   name: string;
   description: string;
   productsAvailable: number;
-  image: string;
+  image: any;
 }
 export default function Category({
   name,
@@ -22,7 +22,7 @@ export default function Category({
           {productsAvailable} Products available
         </Text>
       </View>
-      <Image style={styles.image} source={require('../assets/prem3.webp')} />
+      <Image style={styles.image} source={image} />
     </View>
   );
 }
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     height: '100%',
     width: 100,
     borderRadius: 8,
+    objectFit: 'contain',
   },
   title: {
     color: '#333',
